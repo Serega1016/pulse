@@ -1,0 +1,49 @@
+.preference {
+  min-height: 473px;
+  background: #f6f6f6;
+
+  &_title {
+    padding-top: 70px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #0d0d0d;
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+  }
+  &_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    &_title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 29px;
+      color: #0d0d0d;
+      margin-top: 45px;
+    }
+    &_text {
+      margin-top: 28px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #0d0d0d;
+      a {
+        color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__icon_anim {
+    animation: heartbeat 1.5s ease infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
